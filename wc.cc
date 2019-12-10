@@ -44,10 +44,18 @@ int countLine(std::string pName){
  */
 
 int main(int argc, char** argv){
+    if(argc == 1) {
+        int lines = countLine("Ohio Univeristy");
+        int chars = countChar("Athens");
+        std:: cout << "Characters: " << chars << std::endl;
+        std:: cout << "Lines: " << lines << std::endl;
+    } else {
+    
     std::string s1;
     for(int i = 1; i < argc; i++){
         s1 += argv[i];
-  }
+    }
     std:: cout << "Characters: " << countChar(s1) << std::endl;
     std:: cout << "Lines: " << countLine(s1) << std::endl;
+    }
 }
