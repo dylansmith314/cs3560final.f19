@@ -1,0 +1,11 @@
+# Executable Files
+a.out 
+
+#Generated Files
+*.o
+*-dist.tar.gz
+*.DS_Store
+
+#Generated documentation
+html/
+latex/
